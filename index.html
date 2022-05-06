@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Formulaire DWWM</title>
+
+</head>
+
+<body>
+	<div><h1>Formulaire DWWM</h1>
+	<form method="post">
+		<!-- partie du nom -->
+		<div class="row">
+			<div class="num">
+				<label for="user-name">Nom</label>
+			</div> 
+			<div class="myDire">
+				<input type="name" name="user-name" placeholder ="Entrez votre nom" size="30" maxlength="20" id="nom">
+			</div>
+		
+		</div>
+      <!-- partie de l'email -->
+		<div class="row">
+			<div class="num">
+				<label for="mail">Email</label>
+			</div>
+			<div class="myDire">
+				<input type="email" name="user-email" placeholder="Entrez votre email" size="30" maxlength="27" id="mails">
+			</div>
+		</div>
+		<!-- partie de satisfaction de l'étudiant -->
+		<div class="row">
+			<div class="num">
+				<label for="number">Indiquez votre satisfaction au cours de 1 à 10</label>
+			</div>
+			<div class="myDire">
+				<input type="text" name="numéro" placeholder="numéro de 1 à 10" size="15" maxlength="2" id="numero">
+			</div>
+		</div>
+		<!-- partiedu nom des coachs -->
+		<div class="row">
+			<div class="num">
+				<label for="name">Qui est votre Coach?</label>
+			</div>
+			<div class="myDire">
+				<select name="liste" id="coach" size="1">
+				      <option value="Mamadou">Mamadou</option>
+				      <option value="Malick">Malick</option>
+				      <option value="Birante">Birante</option>
+			   </select>
+			</div>
+		</div>
+		<!-- partie de message -->
+		<div class="row">
+			<div class="num">
+		     	<label for="text">Décrivez votre expérience jusque là</label>
+		   </div>
+		   <div class="myDire">
+		     	<textarea cols="21" rows="3" placeholder="Décrivez votre expérience ici..." id="sms"></textarea>
+
+		   </div>
+		</div>
+		<!-- le button à cliquer -->
+        <div class="bouton">
+           <button type="button" onclick="myFunction()">Vérifier</button>
+       </div>
+
+       <p id="names">   </p>
+       <p id="mail">   </p>
+       <p id="satisfaction">  </p>
+       <p id="coachs">  </p>
+       <p id="expériences">  </p>
+			
+	</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
